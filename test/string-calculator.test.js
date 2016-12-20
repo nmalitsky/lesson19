@@ -16,11 +16,19 @@ describe('String calculator should', () => {
 		assert.equal(sum, 6);
 	});
 
-	it('return sum of any amount of numbers (delimiter by new line)', () => {
+	it('return sum of any amount of numbers (add delimiter \\n)', () => {
 		let calculator = new Calculator();
 
 		let sum = calculator.add("1,2\n3");
 		assert.equal(sum, 6);
 	});
+
+	it('return the following input is NOT ok:  "1,\\n"', () => {
+		let calculator = new Calculator();
+
+		let sum = calculator.add("1,\n");
+		assert.isNotOk(sum, 1);
+	});
+
 
 });
