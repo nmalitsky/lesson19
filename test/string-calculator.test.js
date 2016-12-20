@@ -30,5 +30,11 @@ describe('String calculator should', () => {
 		assert.isNotOk(sum, 1);
 	});
 
+	it('return sum of any amount of number (Support different delimiters)', () => {
+		let calculator = new Calculator();
+
+		let sum = calculator.add("//;\n1;2");
+		assert.equal(sum, 3);
+	});
 
 });
