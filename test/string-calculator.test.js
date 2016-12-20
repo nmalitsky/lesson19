@@ -15,4 +15,12 @@ describe('String calculator should', () => {
 		let sum = calculator.add("1,2,3");
 		assert.equal(sum, 6);
 	});
+
+	it('return sum of any amount of numbers (delimiter by new line)', () => {
+		let calculator = new Calculator();
+
+		let sum = calculator.add("1,2\n3");
+		assert.equal(sum, 6);
+	});
+
 });
