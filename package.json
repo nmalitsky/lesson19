@@ -1,0 +1,23 @@
+{
+  "name": "lesson19",
+  "version": "1.0.0",
+  "description": "TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmalitsky/lesson19/"
+  },
+  "keywords": [
+    "TDD",
+    "Kata"
+  ],
+  "author": "Nikolay Malitsky",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
